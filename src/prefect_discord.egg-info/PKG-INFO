@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: prefect-discord
-Version: 0.0.3
+Version: 0.0.4
 Summary: A simple package to send Prefect flows and tasks notifications to a Discord channel
 Home-page: https://github.com/YURInc/YUR.Prefect.Discord/
 Author: YUR
