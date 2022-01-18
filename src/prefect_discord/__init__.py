@@ -1,1 +1,1 @@
-from prefect_discord import discord_notifier
+from discord_notifier import discord_notifier
