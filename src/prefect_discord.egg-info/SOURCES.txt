@@ -1,8 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-setup.cfg
-src/prefect_discord.egg-info/PKG-INFO
-src/prefect_discord.egg-info/SOURCES.txt
-src/prefect_discord.egg-info/dependency_links.txt
-src/prefect_discord.egg-info/top_level.txt
