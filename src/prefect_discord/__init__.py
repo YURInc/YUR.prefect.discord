@@ -8,6 +8,8 @@ from prefect.engine.state import State
 from typing import Union, cast
 from prefect import Flow, Task 
 
+from toolz import curry
+
 def build_discord_embed(element_name: str, 
                         element_type: str,
                         new_state_name: str, 
@@ -93,7 +95,7 @@ def discord_message_formatter(
     
     return embed
 
-
+@curry
 def discord_notifier(
     tracked_obj: Union["Flow", "Task"],
     old_state: State,
@@ -105,7 +107,9 @@ def discord_notifier(
     proxies: dict = None,
 ) -> State:
     """
-    Discord state change handler; Works as a standalone state handler.
+    Discord state change handler; Works as a standalone state handler, or can be called from within a custom state handler.  
+    This function is curried meaning that it can be called multiple times to partially bind any
+    keyword arguments (see example below).
     Args:
         - tracked_obj (Task or Flow): Task or Flow object the handler is
             registered with
