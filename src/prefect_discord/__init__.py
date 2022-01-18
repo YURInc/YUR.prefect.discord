@@ -1,0 +1,1 @@
+from prefect_discord import discord_notifier

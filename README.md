@@ -15,11 +15,11 @@ def add(x, y):
 ## Configuration
 
 ### Environment Variables
-prefect_discord expects a few secrets set on Prefect's `config.toml`:
-- DISCORD_WEBHOOK_URL = "webhook_url"
-- DISCORD_WEBHOOK_THUMBNAIL_URL = "url_for_the_main_image"
-- DISCORD_WEBHOOK_FOOTER_MESSAGE = "footer_text_next_to_icon"
-- DISCORD_WEBHOOK_FOOTER_ICON_URL = "url_for_the_footer_image"
+`prefect_discord` expects a few secrets set on Prefect's `config.toml`:
+- `DISCORD_WEBHOOK_URL` = "discord_channel_webhook_url"
+- `DISCORD_WEBHOOK_THUMBNAIL_URL` = "url_for_the_main_image"
+- `DISCORD_WEBHOOK_FOOTER_MESSAGE` = "footer_text_next_to_icon"
+- `DISCORD_WEBHOOK_FOOTER_ICON_URL` = "url_for_the_footer_image"
 
 ### State Handler Parameters
 The state handler can also be configured with some options
